@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { dbConnect } from "@/lib/db";
-import Inquiry from "@/models/inquiries";
+import { dbConnect } from "../../lib/db";
+import Inquiry from "@/models/inquiry";
 
 export async function POST(req: Request) {
   const body = await req.json();
